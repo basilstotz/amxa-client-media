@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Tue, 25 Jul 2017 13:05:46 +0200
+Source: amxa-client-media
+Binary: amxa-client-media
+Architecture: source all
+Version: 1.0-6
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: Basil Stotz <stotz@amxa.ch>
+Changed-By: Stotz Basil <stotz.basil@stretch-tkTPxRTu>
+Description:
+ amxa-client-media - <insert up to 60 chars description>
+Changes:
+ amxa-client-media (1.0-6) UNRELEASED; urgency=medium
+ .
+   * Non-maintainer upload.
+   * first build
+   * somefixes
+   * added template
+   * fixed dependency
+   * error insuid
+   * typos
+Checksums-Sha1:
+ f7084e3187641990c430f34c3fe936df68a9db07 600 amxa-client-media_1.0-6.dsc
+ b7f4f68daff127895dd533631e83d2b502bb65d2 12929 amxa-client-media_1.0-6.tar.gz
+ a7d2689d4434eb9f312d47eb6bac3bfa76c0b389 4932 amxa-client-media_1.0-6_all.deb
+ e080d07dd104b525200a4269b833a177eb681263 4921 amxa-client-media_1.0-6_amd64.buildinfo
+Checksums-Sha256:
+ 2d4c58c8f9e7a806dd727f740641fd6873d7a8d0549473c26530bde9101b3a6f 600 amxa-client-media_1.0-6.dsc
+ 36b0b8779497619e27e59e61d8c8e2f3992d22f7c006ebe5e817a333475fa0a6 12929 amxa-client-media_1.0-6.tar.gz
+ 20bd74e7a3a95069d9c901cace7ca498c0fe2d162aebcd0b018d041d6c863446 4932 amxa-client-media_1.0-6_all.deb
+ d98422cb3c6b1c4cf47e298c10010fd172576c0270756483c1c75f361bcebf88 4921 amxa-client-media_1.0-6_amd64.buildinfo
+Files:
+ 084a9a6c04e773b58cdf063c0b0aee8a 600 unknown optional amxa-client-media_1.0-6.dsc
+ 04c7038fb6ef8d054a0ef66375bfddef 12929 unknown optional amxa-client-media_1.0-6.tar.gz
+ ada7f67d5ee3681e1cb359cce4c6cbda 4932 unknown optional amxa-client-media_1.0-6_all.deb
+ 015e54e5b6d6ff41c257049e00b80612 4921 unknown optional amxa-client-media_1.0-6_amd64.buildinfo

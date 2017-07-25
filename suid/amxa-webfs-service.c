@@ -12,14 +12,15 @@ int main( int argc, char **argv)
      return 1;
   }
   setuid(0);
-  system("echo error: amxa-webfs-service Name Port Pfad $USER");
-  system("cp /etc/avahi/webfsd.template /etc/avahi/services/webfsd.service");
-  sprintf(cmd,"sed -e's/@NAME@/%s/g' -i /etc/avahi/services/webfsd.service",argv[1]);
+  system("cp /etc/avahi/webfsd.template /etc/avahi/webfsd.service");
+  sprintf(cmd,"sed -e's/@NAME@/%s/g' -i /etc/avahi/webfsd.service",argv[1]);
   system(cmd);
-  sprintf(cmd,"sed -e's/@PORT@/%s/g' -i /etc/avahi/services/webfsd.service",argv[2]);
+  sprintf(cmd,"sed -e's/@PORT@/%s/g' -i /etc/avahi/webfsd.service",argv[2]);
   system(cmd);
+  system("mv /etc/avahi/webfsd.service /etc/avahi/services/webfsd.service");
+  system("sleep 1");
   sprintf(cmd,"webfsd -f index.html -p %s -r %s -u %s -g nobody",argv[2],argv[3],argv[4]);
   system(cmd);
-  system("echo fertig");
+  system("ok");
   return 0;
 }

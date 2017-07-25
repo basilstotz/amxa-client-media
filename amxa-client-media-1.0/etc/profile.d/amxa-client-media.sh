@@ -32,9 +32,11 @@ if ! test -d "$HOME/$PFAD"; then
 fi
 
 mklink(){
-  if test -d $HOME/$1 -a ! -h $HOME/$PFAD/$1; then
-    ln -s $HOME/$1 $HOME/$PFAD/$1
-  fi
+    if test -d $HOME/$1; then
+	if ! test -h $HOME/$PFAD/$1; then
+            ln -s $HOME/$1 $HOME/$PFAD/$1
+	fi
+   fi
 }
 
 mklink Videos
@@ -42,7 +44,7 @@ mklink Dokumente
 mklink Videos
 mklink Bilder
 
-if echo $USER|grep -v "[G|guest.*"; then
+if echo $USER|grep -v "[G|g]uest.*"; then
     NAME="%h"
 else
     NAME=$USER
