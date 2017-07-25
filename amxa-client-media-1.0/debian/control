@@ -10,6 +10,6 @@ Homepage: <insert the upstream URL, if relevant>
 
 Package: amxa-client-media
 Architecture: all
-Depends: ${misc:Depends},webfsd
+Depends: ${misc:Depends},webfs
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>

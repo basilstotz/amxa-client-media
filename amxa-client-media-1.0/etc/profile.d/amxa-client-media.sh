@@ -1,3 +1,7 @@
+if test $USER = "root"; then
+    echo "not for root..."
+    exit 1
+fi
 #
 #  mount all media to Medien
 #
