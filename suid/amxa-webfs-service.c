@@ -18,7 +18,7 @@ int main( int argc, char **argv)
   system(cmd);
   sprintf(cmd,"sed -e's/@PORT@/%s/g' -i /etc/avahi/services/webfsd.service",argv[2]);
   system(cmd);
-  sprintf(cmd,"webfsd -f index.html -p %i -r %s -u %s -g nobody",argv[2],argv[3],argv[4]);
+  sprintf(cmd,"webfsd -f index.html -p %s -r %s -u %s -g nobody",argv[2],argv[3],argv[4]);
   system(cmd);
   system("echo fertig");
   return 0;
