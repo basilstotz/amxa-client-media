@@ -44,7 +44,7 @@ mklink Dokumente
 mklink Videos
 mklink Bilder
 
-if echo $USER|grep -v "[G|g]uest.*"; then
+if echo $USER|grep -q "[G|g]uest.*"; then
     NAME="%h"
 else
     NAME=$USER

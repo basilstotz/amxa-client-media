@@ -1,4 +1,4 @@
-amxa-client-media (1.0-6) UNRELEASED; urgency=medium
+amxa-client-media (1.0-7) UNRELEASED; urgency=medium
 
   * Non-maintainer upload.
   * first build
@@ -7,8 +7,9 @@ amxa-client-media (1.0-6) UNRELEASED; urgency=medium
   * fixed dependency
   * error insuid
   * typos
+  * typos 
 
- -- Stotz Basil <stotz.basil@stretch-tkTPxRTu>  Tue, 25 Jul 2017 13:05:46 +0200
+ -- Stotz Basil <stotz.basil@stretch-tkTPxRTu>  Tue, 25 Jul 2017 13:24:03 +0200
 
 amxa-client-media (1.0-1) unstable; urgency=medium
 

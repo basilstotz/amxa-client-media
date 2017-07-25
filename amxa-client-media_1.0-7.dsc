@@ -2,7 +2,7 @@ Format: 1.0
 Source: amxa-client-media
 Binary: amxa-client-media
 Architecture: all
-Version: 1.0-6
+Version: 1.0-7
 Maintainer: Basil Stotz <stotz@amxa.ch>
 Homepage: <insert the upstream URL, if relevant>
 Standards-Version: 3.9.8
@@ -10,8 +10,8 @@ Build-Depends: debhelper (>= 9)
 Package-List:
  amxa-client-media deb unknown optional arch=all
 Checksums-Sha1:
- b7f4f68daff127895dd533631e83d2b502bb65d2 12929 amxa-client-media_1.0-6.tar.gz
+ 8db22c83680102b2be6083fc768d0d159d1cc3d5 12985 amxa-client-media_1.0-7.tar.gz
 Checksums-Sha256:
- 36b0b8779497619e27e59e61d8c8e2f3992d22f7c006ebe5e817a333475fa0a6 12929 amxa-client-media_1.0-6.tar.gz
+ 6aedbad70a3e14314d2c90bfe1ddec97a99ac10d1d681952d901cd34854eecb7 12985 amxa-client-media_1.0-7.tar.gz
 Files:
- 04c7038fb6ef8d054a0ef66375bfddef 12929 amxa-client-media_1.0-6.tar.gz
+ 5523fbc611210fb67722781e747b015a 12985 amxa-client-media_1.0-7.tar.gz
