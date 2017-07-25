@@ -1,0 +1,12 @@
+amxa-client-media (1.0-1.1) UNRELEASED; urgency=medium
+
+  * Non-maintainer upload.
+  * first build
+
+ -- Stotz Basil <stotz.basil@stretch-tkTPxRTu>  Tue, 25 Jul 2017 11:28:47 +0200
+
+amxa-client-media (1.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Basil Stotz <stotz@amxa.ch>  Tue, 25 Jul 2017 11:11:35 +0200

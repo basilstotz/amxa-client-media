@@ -1,0 +1,15 @@
+Source: amxa-client-media
+Section: unknown
+Priority: optional
+Maintainer: Basil Stotz <stotz@amxa.ch>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.8
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: https://anonscm.debian.org/collab-maint/amxa-client-media.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/amxa-client-media.git
+
+Package: amxa-client-media
+Architecture: all
+Depends: ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>

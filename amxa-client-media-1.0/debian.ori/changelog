@@ -1,0 +1,5 @@
+amxa-client-media (1.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Basil Stotz <stotz@amxa.ch>  Tue, 25 Jul 2017 11:11:35 +0200
