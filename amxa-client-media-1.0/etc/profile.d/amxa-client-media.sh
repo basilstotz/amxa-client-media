@@ -20,17 +20,23 @@ fi
 #
 #  start local webserver (incl. avahi)
 #
-PORT="8080"
+PORT="80"
 PFAD=".config/public_html"
 
 if ! test -d "$HOME/$PFAD"; then
     mkdir -p "$HOME/$PFAD"
 fi
 
-ln -s $HOME/Musik $HOME/$PFAD/Musik
-ln -s $HOME/Dokumente $HOME/$PFAD/Dokumente
-ln -s $HOME/Videos $HOME/$PFAD/Videos
-ln -s $HOME/Bilder $HOME/$PFAD/Bilder
+mklink(){
+  if test -d $HOME/$1 -a ! -h $HOME/$PFAD/$1; then
+    ln -s $HOME/$1 $HOME/$PFAD/$1
+  fi
+}
+
+mklink Videos
+mklink Dokumente
+mklink Videos
+mklink Bilder
 
 if echo $USER|grep -v "[G|guest.*"; then
     NAME="%h"
@@ -40,7 +46,7 @@ fi
 
 if test -d "$HOME/.config/public_html"; then
     if nmap -p $PORT localhost|grep -q -v $PORT; then
-       amxa-webfs-service $NAME $PORT $HOME/$PFAD/ $USER
+        /usr/share/bin/amxa-webfs-service $NAME $PORT $HOME/$PFAD/ $USER
     fi
 fi
 
