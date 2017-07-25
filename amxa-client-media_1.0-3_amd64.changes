@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Tue, 25 Jul 2017 11:48:57 +0200
+Source: amxa-client-media
+Binary: amxa-client-media
+Architecture: source all
+Version: 1.0-3
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: Basil Stotz <stotz@amxa.ch>
+Changed-By: Stotz Basil <stotz.basil@stretch-tkTPxRTu>
+Description:
+ amxa-client-media - <insert up to 60 chars description>
+Changes:
+ amxa-client-media (1.0-3) UNRELEASED; urgency=medium
+ .
+   * Non-maintainer upload.
+   * first build
+   * somefixes
+   * added template
+Checksums-Sha1:
+ b5ce938eae130a2f377a1d3ea34ac495728c87a1 600 amxa-client-media_1.0-3.dsc
+ 377e446f783e6257d13350e8eb260e79374e351b 12875 amxa-client-media_1.0-3.tar.gz
+ 139519f46adab53f0bae5f568c2089cd0e096574 4870 amxa-client-media_1.0-3_all.deb
+ f64a0b88b6df89c2ab249ec450eda04fc6409425 4921 amxa-client-media_1.0-3_amd64.buildinfo
+Checksums-Sha256:
+ 0f33a5dc5f609b5e3f71315b0155faa07be3ff6557ab34f0fc190bc00c6f8e73 600 amxa-client-media_1.0-3.dsc
+ 369a347a7d858d39adca815f101c00015c9f38164bfde7260bf4390c87738ec5 12875 amxa-client-media_1.0-3.tar.gz
+ fce95dfad4a38c0288dd7c4b85ab60fa1685d7fbc9a7aaae7abd18f73d85fe0c 4870 amxa-client-media_1.0-3_all.deb
+ f6d331b7fe5f0b7d4bd280ae9064a4466b0fa308d00dd01957b9ff9c54d3f427 4921 amxa-client-media_1.0-3_amd64.buildinfo
+Files:
+ 2e0e602379bfba99eba7460c30c7f8e6 600 unknown optional amxa-client-media_1.0-3.dsc
+ e81ec3387e211aef61ceab4ad54c26de 12875 unknown optional amxa-client-media_1.0-3.tar.gz
+ b49341979aeff1cbb008778481b13b96 4870 unknown optional amxa-client-media_1.0-3_all.deb
+ 00badb1937bd10f0ac886cdb0edd1265 4921 unknown optional amxa-client-media_1.0-3_amd64.buildinfo

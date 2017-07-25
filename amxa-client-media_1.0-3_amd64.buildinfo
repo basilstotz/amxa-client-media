@@ -2,19 +2,19 @@ Format: 1.0
 Source: amxa-client-media
 Binary: amxa-client-media
 Architecture: all source
-Version: 1.0-2
+Version: 1.0-3
 Checksums-Md5:
- db1a4019082acc3ddadccde31728813f 600 amxa-client-media_1.0-2.dsc
- 801545e6c91a9b9f7854aa68f6e9a828 4618 amxa-client-media_1.0-2_all.deb
+ 2e0e602379bfba99eba7460c30c7f8e6 600 amxa-client-media_1.0-3.dsc
+ b49341979aeff1cbb008778481b13b96 4870 amxa-client-media_1.0-3_all.deb
 Checksums-Sha1:
- c260825bebdcbc8cd9913c0730503daea4e81465 600 amxa-client-media_1.0-2.dsc
- f67182e03547bf9e9643b84f418b4fbc2ad20a71 4618 amxa-client-media_1.0-2_all.deb
+ b5ce938eae130a2f377a1d3ea34ac495728c87a1 600 amxa-client-media_1.0-3.dsc
+ 139519f46adab53f0bae5f568c2089cd0e096574 4870 amxa-client-media_1.0-3_all.deb
 Checksums-Sha256:
- 6991564d316fa478a128e2c456d310ec4c1bde73e4ad1b84064436bd283c83f4 600 amxa-client-media_1.0-2.dsc
- 260810db2336f4162342e0f27ef980cf99b5531257d3c1f78534816cf5b84a28 4618 amxa-client-media_1.0-2_all.deb
+ 0f33a5dc5f609b5e3f71315b0155faa07be3ff6557ab34f0fc190bc00c6f8e73 600 amxa-client-media_1.0-3.dsc
+ fce95dfad4a38c0288dd7c4b85ab60fa1685d7fbc9a7aaae7abd18f73d85fe0c 4870 amxa-client-media_1.0-3_all.deb
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Tue, 25 Jul 2017 11:40:46 +0200
+Build-Date: Tue, 25 Jul 2017 11:49:15 +0200
 Installed-Build-Depends:
  autoconf (= 2.69-10),
  automake (= 1:1.15-6),
@@ -175,4 +175,4 @@ Environment:
  DEB_BUILD_OPTIONS="parallel=2"
  LANG="de_CH.UTF-8"
  MAKEFLAGS=""
- SOURCE_DATE_EPOCH="1500975632"
+ SOURCE_DATE_EPOCH="1500976137"
