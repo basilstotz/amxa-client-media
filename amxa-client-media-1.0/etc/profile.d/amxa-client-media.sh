@@ -5,14 +5,15 @@ fi
 #
 #  mount all media to Medien
 #
-if ! test -d "$HOME/Medien"; then
-    mkdir -p "$HOME/Medien"
-fi
-if test -d "$HOME/Medien"; then
-   if mount|grep -q -v djmount; then    
-       djmount "$HOME/Medien"
-   fi
-fi
+# to much resoources!
+#if ! test -d "$HOME/Medien"; then
+#    mkdir -p "$HOME/Medien"
+#fi
+#if test -d "$HOME/Medien"; then
+#   if mount|grep -q -v djmount; then    
+#       djmount "$HOME/Medien"
+#   fi
+#fi
 #
 #  start local mediaserver
 #
@@ -41,7 +42,7 @@ mklink(){
 
 mklink Videos
 mklink Dokumente
-mklink Videos
+mklink Musik
 mklink Bilder
 
 if echo $USER|grep -q "[G|g]uest.*"; then
