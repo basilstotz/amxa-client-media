@@ -1,0 +1,42 @@
+Format: 1.8
+Date: Mon, 21 Aug 2017 17:18:50 +0200
+Source: amxa-client-media
+Binary: amxa-client-media
+Architecture: source all
+Version: 1.0-9ubuntu5
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: Basil Stotz <stotz@amxa.ch>
+Changed-By: Stotz Basil <stotz.basil@basil-lap.basel.opinsys.fi>
+Description: 
+ amxa-client-media - <insert up to 60 chars description>
+Changes: 
+ amxa-client-media (1.0-9ubuntu5) UNRELEASED; urgency=medium
+ .
+   * Non-maintainer upload.
+   * first build
+   * somefixes
+   * added template
+   * fixed dependency
+   * error insuid
+   * typos
+   * typos
+   * fixed error in suid
+   * again
+   * again
+   * removed djmount
+   * removed exit in script
+   * removed cleanup code
+   * *
+Checksums-Sha1: 
+ 856f97d939d4b7da7447c772621ed5b015f8caa0 623 amxa-client-media_1.0-9ubuntu5.dsc
+ e21b8d1b35881140fa1e5edd54eb5c995f3305ba 12750 amxa-client-media_1.0-9ubuntu5.tar.gz
+ 975ef2288e7f105f689585bb5d1473c48b5c65db 4988 amxa-client-media_1.0-9ubuntu5_all.deb
+Checksums-Sha256: 
+ 58eefdc875733a87d2360e5f0fba690f14d63fa6afae80519e438198c9e598c0 623 amxa-client-media_1.0-9ubuntu5.dsc
+ 2ee696136f5dbeb7a7a84a022693e5df9a36eb40619062c861f75306ec0190f1 12750 amxa-client-media_1.0-9ubuntu5.tar.gz
+ 212cd8e137e2d61ee4faffe7c8370f355ccfb4b2a93d5eefca5e199e977e793c 4988 amxa-client-media_1.0-9ubuntu5_all.deb
+Files: 
+ 429277549a9d3e0229c5efa59f4edfdf 623 unknown optional amxa-client-media_1.0-9ubuntu5.dsc
+ c35074aca3728aee266452c5426489d1 12750 unknown optional amxa-client-media_1.0-9ubuntu5.tar.gz
+ f62651f79195ba252ffdc4c2a60c537b 4988 unknown optional amxa-client-media_1.0-9ubuntu5_all.deb

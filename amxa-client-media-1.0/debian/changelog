@@ -1,4 +1,4 @@
-amxa-client-media (1.0-9ubuntu2) UNRELEASED; urgency=medium
+amxa-client-media (1.0-9ubuntu5) UNRELEASED; urgency=medium
 
   * Non-maintainer upload.
   * first build
@@ -12,8 +12,11 @@ amxa-client-media (1.0-9ubuntu2) UNRELEASED; urgency=medium
   * again
   * again
   * removed djmount
+  * removed exit in script
+  * removed cleanup code
+  * *
 
- -- Stotz Basil <stotz.basil@basil-lap.basel.opinsys.fi>  Tue, 01 Aug 2017 09:46:53 +0200
+ -- Stotz Basil <stotz.basil@basil-lap.basel.opinsys.fi>  Mon, 21 Aug 2017 17:18:50 +0200
 
 amxa-client-media (1.0-1) unstable; urgency=medium
 
