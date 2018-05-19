@@ -8,11 +8,13 @@ if ! test $USER = "root"; then
 #    if ! test -d "$HOME/Medien"; then
 #       mkdir -p "$HOME/Medien"
 #    fi
-#    if test -d "$HOME/Medien"; then
-#       if mount|grep -q -v djmount; then    
-#          djmount "$HOME/Medien"
-#       fi
-#     fi
+
+    MEDIEN="Medien"
+    if test -d "$HOME/$MEDIEN"; then
+       if mount|grep -q -v $HOME/$MEDIEN; then    
+          djmount "$HOME/$MEDIEN"
+       fi
+     fi
 
 
 
@@ -20,43 +22,37 @@ if ! test $USER = "root"; then
 #  start local mediaserver
 #
 
+  if test -d $HOME/MeineMedien; then
     if ! test "$USER" = "guest"; then
        rygel --replace --title="MediaExport:@REALNAME@" &
     else
        rygel --replace --title="MediaExport:@PRETTY_HOSTNAME@" &
     fi
+  if
+
 #
 #  start local webserver (incl. avahi)
 #
+
     PORT="80"
-    PFAD=".config/public_html"
+    PFAD="$HOME/.config/public_html"
 
-    if ! test -d "$HOME/$PFAD"; then
-      mkdir -p "$HOME/$PFAD"
-    fi
+    if test -d $PFAD; then 
 
+      if ! test -l "$HOME/public_html"; then
+        mkdir -p "$HOME/public_html"
+      fi
+ 
+      if echo $USER|grep -q "[G|g]uest.*"; then
+         NAME="%h"
+      else
+         NAME=$USER
+      fi
 
-#    mklink(){
-#       if test -d $HOME/$1; then
-#	   if ! test -h $HOME/$PFAD/$1; then
-#             ln -s $HOME/$1 $HOME/$PFAD/$1
-#	   fi
-#       fi
-#    }
+      if nmap -p $PORT localhost|grep -q -v $PORT; then
+         /usr/share/bin/amxa-webfs-service $NAME $PORT $PFAD/ $USER
+      fi
 
-#    mklink Videos
-#    mklink Dokumente
-#    mklink Musik
-#    mklink Bilder
+   fi     #pfad
 
-    if echo $USER|grep -q "[G|g]uest.*"; then
-       NAME="%h"
-    else
-       NAME=$USER
-    fi
-
-    if nmap -p $PORT localhost|grep -q -v $PORT; then
-       /usr/share/bin/amxa-webfs-service $NAME $PORT $HOME/$PFAD/ $USER
-    fi
-
-fi
+fi #not root
