@@ -9,14 +9,20 @@ if ! test $USER = "root"; then
     # Puablich Onw Media
     MEINEMEDIEN="MeineMedien"
 
+    if ! test -d $HOME/$MEDIEN; then 
+       mkdir -p $HOME/$MEDIEN
+    fi
 
     if echo $USER|grep -q "[G|g]uest.*"; then
          NAME="%h"
+
          if ! test -d $HOME/.local/$PUBLIC_HTML; then 
-             mkdir -p $HOME/.local/$PUBLIC_HTML;
+             mkdir -p $HOME/.local/$PUBLIC_HTML
          fi
-         if ! test -d $HOME/$MEDIEN; then mkdir -p $HOME/$MEDIEN;fi
-         if ! test -d $HOME/$MEINEMEDIEN; then mkdir -p $HOME/$MEINEMEDIEN;fi
+
+         if ! test -d $HOME/$MEINEMEDIEN; then 
+             mkdir -p $HOME/$MEINEMEDIEN
+         fi
     else
          NAME=$USER
     fi
