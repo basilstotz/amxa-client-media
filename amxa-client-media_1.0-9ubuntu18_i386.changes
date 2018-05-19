@@ -1,0 +1,56 @@
+Format: 1.8
+Date: Sat, 19 May 2018 16:10:56 +0200
+Source: amxa-client-media
+Binary: amxa-client-media
+Architecture: source all
+Version: 1.0-9ubuntu18
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: Basil Stotz <stotz@amxa.ch>
+Changed-By: Stotz Basil <stotz.basil@basil-lap.basel.opinsys.fi>
+Description: 
+ amxa-client-media - <insert up to 60 chars description>
+Changes: 
+ amxa-client-media (1.0-9ubuntu18) UNRELEASED; urgency=medium
+ .
+   * Non-maintainer upload.
+   * first build
+   * somefixes
+   * added template
+   * fixed dependency
+   * error insuid
+   * typos
+   * typos
+   * fixed error in suid
+   * again
+   * again
+   * removed djmount
+   * removed exit in script
+   * removed cleanup code
+   * *
+   * better media handling
+   * fixed runtime error
+   * Medien is for all now
+   * new version
+   * *
+   * *
+ .
+   * *
+   * #
+   * #
+   * #
+   * #
+   * #
+   * #
+Checksums-Sha1: 
+ c167bb04b080a2f2f5daa5e94b17b883d4f85a47 627 amxa-client-media_1.0-9ubuntu18.dsc
+ 849cea30037ae7c8a2e260649a4f92119e047c7c 13037 amxa-client-media_1.0-9ubuntu18.tar.gz
+ cda06d0b7ba7b89a02eea676b479a84fc1137c0c 5224 amxa-client-media_1.0-9ubuntu18_all.deb
+Checksums-Sha256: 
+ c1e9f0d265679cac02f43cc187b4553f671ee8e86de4a2506a1767f0499256ed 627 amxa-client-media_1.0-9ubuntu18.dsc
+ e882423a0068476852dea5ebb8ba4e33911623f126fa15c511f03ed5ddd9b1b7 13037 amxa-client-media_1.0-9ubuntu18.tar.gz
+ 9e52a21f7cb28a78e9e512692e6f8729144edeefddbcc20b719da4426ac1647e 5224 amxa-client-media_1.0-9ubuntu18_all.deb
+Files: 
+ 3e4c6ae779d072495e9e8014e1b6dfed 627 unknown optional amxa-client-media_1.0-9ubuntu18.dsc
+ 58ef760ec61e4a2bca1f3c2b996dcc5b 13037 unknown optional amxa-client-media_1.0-9ubuntu18.tar.gz
+ 181d71627df5c3acf97ed0bd4f5555ca 5224 unknown optional amxa-client-media_1.0-9ubuntu18_all.deb

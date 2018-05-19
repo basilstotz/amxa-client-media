@@ -43,10 +43,19 @@ if ! test $USER = "root"; then
 #
 
   if test -d $HOME/$MEINEMEDIEN; then
-      if ! test "$USER" = "guest"; then
-         rygel --replace --uris="$HOME/$MEINEMEDIEN" --title="MediaExport:@REALNAME@" &
+
+      cp /etc/rygel.conf $HOME/.local/rygel.conf
+      sed  -i -e "s#^uris=.*#uris=${HOME}\/MeineMedien\n#g" $HOME/.local/rygel.conf
+ 
+
+      if ! test "$USER" = "[G|g].*st"; then
+         rygel --replace \
+               --config $HOME/.local/rygel.conf  \
+               --title="MediaExport:@REALNAME@" &
       else
-         rygel --replace --uris="$HOME/$MEINEMEDIEN" --title="MediaExport:@PRETTY_HOSTNAME@" &
+         rygel --replace \
+               --config $HOME/.local/rygel.conf  \
+               --title="MediaExport:@PRETTY_HOSTNAME@" &
       fi
   fi
 
@@ -56,7 +65,7 @@ if ! test $USER = "root"; then
 
    if test -d $HOME/.local/$PUBLIC_HTML; then 
 
-      if ! test -l $HOME/$PUBLIC_HTML; then
+      if ! test -h $HOME/$PUBLIC_HTML; then
          ln -s $HOME/.local/$PUBLIC_HTML $HOME/$PUBLIC_HTML
       fi
  

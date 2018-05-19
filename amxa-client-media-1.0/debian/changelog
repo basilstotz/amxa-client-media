@@ -1,4 +1,4 @@
-amxa-client-media (1.0-9ubuntu7) UNRELEASED; urgency=medium
+amxa-client-media (1.0-9ubuntu18) UNRELEASED; urgency=medium
 
   * Non-maintainer upload.
   * first build
@@ -17,8 +17,20 @@ amxa-client-media (1.0-9ubuntu7) UNRELEASED; urgency=medium
   * *
   * better media handling
   * fixed runtime error
+  * Medien is for all now
+  * new version
+  * *
+  * *
+	
+  * *
+  * #
+  * #
+  * #
+  * #
+  * #
+  * #
 
- -- Stotz Basil <stotz.basil@basil-lap.basel.opinsys.fi>  Sat, 19 May 2018 12:36:43 +0200
+ -- Stotz Basil <stotz.basil@basil-lap.basel.opinsys.fi>  Sat, 19 May 2018 16:10:56 +0200
 
 amxa-client-media (1.0-1) unstable; urgency=medium
 
